@@ -117,6 +117,12 @@ After installation, your app will have an apitome initializer (app/config/initia
 
   <b>default:</b> <code>-> (str) { str.gsub(/\.json$/, '').underscore.gsub(/[^0-9a-z]+/i, '-') }</code>
 </dd>
+
+<dt> simulated_link </dt><dd>
+  Apitome can display link to Simulated Response in the Example > Response section. You can turn it off if you want.
+
+  <b>default:</b> <code>true</code>
+</dd>
 =======
 
 When you install Apitime an initializer file (app/config/initializers/apitome.rb) is generated that contains good
