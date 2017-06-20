@@ -10,11 +10,7 @@
       <% params.each do |param| %>
         <tr>
           <td class="name">
-            <% if param['scope'] %>
-              <%= "#{format_scope(param['scope'])}[#{param['name']}]" %>
-            <% else %>
-              <%= param['name'] %>
-            <% end %>
+            <%= param_name(param) %>
             <% if param['required'] %>
               <span class="label label-danger required"><%= t(:required, scope: :apitome) %></span>
             <% end %>
