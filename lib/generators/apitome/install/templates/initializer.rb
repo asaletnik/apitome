@@ -54,4 +54,8 @@ Apitome.setup do |config|
   # the readme is located. It uses the doc_path setting to build the
   # URLs for the API documentation. This defaults to nil.
   config.remote_url = nil
+
+  # If the simulated_link is set to true, "Simulated Response" link is
+  # getting displayed in the Response section. Defaults to true.
+  config.simulated_link = true
 end
