@@ -10,11 +10,7 @@
       <% params.each do |param| %>
         <tr>
           <td class="name">
-            <% if param['scope'] %>
-              <%= "#{param['scope']}[#{param['name']}]" %>
-            <% else %>
-              <%= param['name'] %>
-            <% end %>
+            <%= param_name(param) %>
           </td>
           <td class="description"><%= param['description'] %></td>
           <% param_extras(params).each do |extra| %>
